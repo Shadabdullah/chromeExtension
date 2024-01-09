@@ -1,0 +1,73 @@
+@import url('style.css');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    border-color: #ED8601;
+    background-color: #f0f0f0; /* Light gray background color */
+  }
+  
+  /* Styling for the centered button */
+/* Styling for the centered button */
+.centered-button {
+    width: 100px;
+    height: 50px;
+    border: .1px solid #ED8601;
+    color: #ED8601; /* Changed text color to match border */
+    background: linear-gradient(45deg, #ED8601 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    font-family: monospace;
+    transition: background 300ms ease-in-out;
+    /* Increased font-weight for better readability */
+    font-weight: bold;
+  }
+  
+  /* Adjust hover effect to maintain contrast */
+  .centered-button:hover {
+    background-position: 0;
+    color: #fff; /* Change text color on hover for better contrast */
+  }
+  
+  
+  img{
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Existing styles */
+/* ... */
+
+/* Styling for tooltip */
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  /* Show tooltip on button hover */
+  .centered-button:hover + .tooltip {
+    visibility: visible;
+  }
+  

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "EdistrictIndia",
+  "version": "1.0.0",
+  "permissions": ["scripting","activeTab", "tabs","storage"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": { 
+    "default_popup":"popup.html",
+    "default_icon": "images/logo.png"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+
+}
+
